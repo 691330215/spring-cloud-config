@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: dreamweaver-spring-cloud-service-admin
+
+server:
+  port: 8801
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8800/eureka/
