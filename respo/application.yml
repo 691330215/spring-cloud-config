@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: dreamweaver-spring-cloud-web-admin-feign
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+server:
+  port: 8805
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8800/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
